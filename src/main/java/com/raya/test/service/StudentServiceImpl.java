@@ -1,5 +1,6 @@
 package com.raya.test.service;
 
+import com.raya.test.exeption.NotFoundException;
 import com.raya.test.model.Student;
 import com.raya.test.repository.StudentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,9 +44,11 @@ public class StudentServiceImpl implements StudentService {
         if (student.isPresent())
             return  student.get();
         else
-            throw new RuntimeException();
+            throw new NotFoundException("this student  not found:"+id);
 
     }
+
+
 
     @Override
     public String updateStudent(String name,int age) {

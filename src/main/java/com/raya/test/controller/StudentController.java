@@ -3,6 +3,9 @@ package com.raya.test.controller;
 
 import com.raya.test.model.Student;
 import com.raya.test.service.StudentServiceImpl;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
@@ -43,7 +46,13 @@ public class StudentController {
 
 
 
-
+    @ApiOperation(value = "Add or insert student")
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Added successfully"),
+            @ApiResponse(code = 401, message = "You are not authorized"),
+            @ApiResponse(code = 409, message = "It is duplicate"),
+            @ApiResponse(code = 500, message = "Server error")
+    })
     @PostMapping("/addStudent")
     public ResponseEntity<Void> addStudent(@RequestBody @Valid Student param){
 
