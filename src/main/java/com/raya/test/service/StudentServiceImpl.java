@@ -39,22 +39,21 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public Student getStudent(Long id) {
-        Optional<Student> student=studentRepo.findById(id);
+        Optional<Student> student = studentRepo.findById(id);
 
         if (student.isPresent())
-            return  student.get();
+            return student.get();
         else
-            throw new NotFoundException("this student  not found:"+id);
+            throw new NotFoundException("this student  not found:" + id);
 
     }
 
 
-
     @Override
-    public String updateStudent(String name,int age) {
+    public String updateStudent(Long id,String name,int age) {
 
 
-        Optional<Student> student = studentRepo.findByName(name);
+        Optional<Student> student = studentRepo.findById(id);
 
 
         if (student.isPresent()) {
@@ -62,7 +61,7 @@ public class StudentServiceImpl implements StudentService {
             Student test = student.get();
 
             test.setAge(age);
-            test.setName(test.getName());
+            test.setName(name);
             studentRepo.save(test);
         } else
             throw new RuntimeException();
@@ -74,17 +73,23 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public String deleteStudent(Long id) {
 
-//        for (Student std : list) {
-//            if (std.getId() == id) {
-//                list.remove(std);
-//                break;
-//
-//            }
-//
-//
-//        }
 
-        return "delete shod";
+        Optional<Student> student = studentRepo.findById(id);
+        if (student.isPresent())
+        {
+
+
+
+            studentRepo.deleteById(id);
+            return "delete shod";
+        }
+        else {
+
+            throw new RuntimeException();
+
+
+        }
+
     }
 
     @Override

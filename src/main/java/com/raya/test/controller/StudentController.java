@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.net.ssl.HttpsURLConnection;
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/student")
@@ -29,10 +30,15 @@ public class StudentController {
         return studentService.getAll();
     }
 
-    @GetMapping("/updateStudent/{name}/{age}")
-    public String updateStudent(@PathVariable("name") String name,@PathVariable("age") int age){
+    @PostMapping("/updateStudent")
+    public String updateStudent(@RequestBody Map<String,Object> data){
 
-        return studentService.updateStudent(name,age);
+        String name = (String) data.get("name");
+        Long id = ((Number) data.get("id")).longValue();
+        int age = (int) data.get("age");
+
+
+        return studentService.updateStudent(id,name,age);
     }
 
 

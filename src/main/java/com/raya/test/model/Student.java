@@ -34,7 +34,7 @@ public class Student {
 
 
 
-    @OneToMany(mappedBy = "student", fetch=FetchType.LAZY)
+    @OneToMany(mappedBy = "student", fetch=FetchType.LAZY,orphanRemoval = true)
     @JsonIgnore
     private List<Lesson> lessons;
 
