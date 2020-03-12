@@ -14,6 +14,9 @@ public interface StudentMapper {
 
     @Mapping(source = "idStudent", target = "studentId")
     @Mapping(source = "imageName", target = "studentImageName")
+    @Mapping(source = "family", target = "studentFamily")
+    @Mapping(source = "phoneNumber", target = "studentPhoneNumber")
+    @Mapping(source = "nationalCode", target = "studentNationalCode")
     @Mapping(source = "imageType", target = "studentImageType")
     @Mapping(source = "name", target = "studentName")
     @Mapping(source = "age", target = "studentAge", qualifiedByName = "convertToStringAge")
@@ -27,6 +30,9 @@ public interface StudentMapper {
     @Mapping(source = "studentName", target = "name")
     @Mapping(source = "studentAge", target = "age", qualifiedByName = "convertToIntegerAge")
     @Mapping(source = "studentImage", target = "image")
+    @Mapping(source = "studentFamily", target = "family")
+    @Mapping(source = "studentPhoneNumber", target = "phoneNumber")
+    @Mapping(source = "studentNationalCode", target = "nationalCode")
     Student toStudentEntity(StudentDTO studentDTO);
 
     List<StudentDTO> toStudentsDTO(Page<Student> userList);

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
+import static org.springframework.http.HttpStatus.BAD_REQUEST;
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 
 @Order(Ordered.HIGHEST_PRECEDENCE)
@@ -26,9 +27,6 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 //        return buildResponseEntity(apiError);
 //    }
 //
-
-
-
 
 
     /**
@@ -115,13 +113,6 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 //
 
 
-
-
-
-
-
-
-
     //429 Too Many Requests
     //The user has sent too many requests in a given amount of time. Intended for use with rate limiting schemes. This code has been accepted in RFC 6585 Additional HTTP Status Codes.
     //
@@ -139,7 +130,6 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 //    }
 
 
-
     /**
      * Handles EntityNotFoundException. Created to encapsulate errors with more detail than javax.persistence.EntityNotFoundException.
      *
@@ -152,9 +142,6 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 //        apiError.setMessage(ex.getMessage());
 //        return buildResponseEntity(apiError);
 //    }
-
-
-
     @ExceptionHandler({NotFoundException.class})
     protected ResponseEntity<Object> handleNotFoundException(NotFoundException notFoundException) {
         ApiError apiError = new ApiError(NOT_FOUND);
@@ -321,18 +308,31 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 //        return buildResponseEntity(apiError);
 //    }
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 
     private ResponseEntity<Object> buildResponseEntity(ApiError apiError) {
         return new ResponseEntity<>(apiError, apiError.getStatus());
+    }
+
+    @ExceptionHandler({NotConfirmPhoneNumberException.class})
+    protected ResponseEntity<Object> handleNoConfirmPhoneNumberException(NotConfirmPhoneNumberException notConfirmPhoneNumberException) {
+        ApiError apiError = new ApiError(BAD_REQUEST);
+        apiError.setMessage(notConfirmPhoneNumberException.getMessage());
+        return buildResponseEntity(apiError);
+    }
+
+    @ExceptionHandler({NotConfirmNationalCodeException.class})
+    protected ResponseEntity<Object> handleNoConfirmPasswordException(NotConfirmNationalCodeException notConfirmNationalCodeException) {
+        ApiError apiError = new ApiError(BAD_REQUEST);
+        apiError.setMessage(notConfirmNationalCodeException.getMessage());
+        return buildResponseEntity(apiError);
+    }
+
+    @ExceptionHandler({SaveImageException.class})
+    protected ResponseEntity<Object> handleSaveImageExceptionException(SaveImageException saveImageException) {
+        ApiError apiError = new ApiError(BAD_REQUEST);
+        apiError.setMessage(saveImageException.getMessage());
+        return buildResponseEntity(apiError);
     }
 
 }

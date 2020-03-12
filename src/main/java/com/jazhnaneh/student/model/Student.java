@@ -19,13 +19,25 @@ public class Student {
     @Column(name = "id_student", unique = true)
     private Long idStudent;
 
-
     @NotNull
     @NotBlank
     @Column(name = "name")
-    @NotEmpty(message = "name is required")
     private String name;
 
+    @NotNull
+    @NotBlank
+    @Column(name = "family")
+    private String family;
+
+    @NotNull
+    @NotBlank
+    @Column(name = "phone_umber")
+    private String phoneNumber;
+
+    @NotNull
+    @NotBlank
+    @Column(name = "national_code")
+    private String nationalCode;
 
     @NotNull
     @Column(name = "age")
@@ -125,6 +137,30 @@ public class Student {
 
     public void setImage(byte[] image) {
         this.image = image;
+    }
+
+    public String getFamily() {
+        return family;
+    }
+
+    public void setFamily(String family) {
+        this.family = family;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getNationalCode() {
+        return nationalCode;
+    }
+
+    public void setNationalCode(String nationalCode) {
+        this.nationalCode = nationalCode;
     }
 
     @PrePersist

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-03-12T16:07:13+0330",
+    date = "2020-03-12T18:24:58+0330",
     comments = "version: 1.3.0.Beta2, compiler: javac, environment: Java 11.0.5 (JetBrains s.r.o)"
 )
 @Component
@@ -29,11 +29,14 @@ public class StudentMapperImpl implements StudentMapper {
         studentDTO.setStudentImageType( student.getImageType() );
         studentDTO.setStudentAge( convertToStringAge( student.getAge() ) );
         studentDTO.setStudentImageName( student.getImageName() );
+        studentDTO.setStudentPhoneNumber( student.getPhoneNumber() );
         studentDTO.setStudentName( student.getName() );
         byte[] studentImage = student.getImage();
         if ( studentImage != null ) {
             studentDTO.setStudentImage( Arrays.copyOf( studentImage, studentImage.length ) );
         }
+        studentDTO.setStudentNationalCode( student.getNationalCode() );
+        studentDTO.setStudentFamily( student.getFamily() );
 
         return studentDTO;
     }
@@ -50,8 +53,11 @@ public class StudentMapperImpl implements StudentMapper {
         if ( image != null ) {
             student.setImage( Arrays.copyOf( image, image.length ) );
         }
+        student.setNationalCode( studentDTO.getStudentNationalCode() );
         student.setImageName( studentDTO.getStudentImageType() );
+        student.setPhoneNumber( studentDTO.getStudentPhoneNumber() );
         student.setName( studentDTO.getStudentName() );
+        student.setFamily( studentDTO.getStudentFamily() );
         student.setImageType( studentDTO.getStudentImageName() );
         student.setIdStudent( studentDTO.getStudentId() );
         student.setAge( convertToIntegerAge( studentDTO.getStudentAge() ) );

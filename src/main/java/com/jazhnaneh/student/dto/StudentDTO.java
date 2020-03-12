@@ -24,6 +24,15 @@ public class StudentDTO {
     @ApiModelProperty(required = false, hidden = true)
     private byte[] studentImage;
 
+    @ApiModelProperty(required = true, hidden = false)
+    private String studentFamily;
+
+    @ApiModelProperty(required = true, hidden = false)
+    private String studentPhoneNumber;
+
+    @ApiModelProperty(required = true, hidden = false)
+    private String studentNationalCode;
+
 
     public Long getStudentId() {
         return studentId;
@@ -71,5 +80,29 @@ public class StudentDTO {
 
     public void setStudentImage(byte[] studentImage) {
         this.studentImage = studentImage;
+    }
+
+    public String getStudentFamily() {
+        return studentFamily;
+    }
+
+    public void setStudentFamily(String studentFamily) {
+        this.studentFamily = studentFamily;
+    }
+
+    public String getStudentPhoneNumber() {
+        return studentPhoneNumber;
+    }
+
+    public void setStudentPhoneNumber(String studentPhoneNumber) {
+        this.studentPhoneNumber = studentPhoneNumber;
+    }
+
+    public String getStudentNationalCode() {
+        return studentNationalCode;
+    }
+
+    public void setStudentNationalCode(String studentNationalCode) {
+        this.studentNationalCode = studentNationalCode;
     }
 }

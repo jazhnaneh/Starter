@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "hibernate.connection.autocommit",
+      "type": "java.lang.String",
+      "description": "Description for hibernate.connection.autocommit."
+  }
+] }

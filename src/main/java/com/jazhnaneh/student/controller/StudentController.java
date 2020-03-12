@@ -1,10 +1,10 @@
 package com.jazhnaneh.student.controller;
 
 
+import com.jazhnaneh.student.dto.StudentDTO;
 import com.jazhnaneh.student.mapper.StudentMapper;
 import com.jazhnaneh.student.model.Student;
 import com.jazhnaneh.student.service.StudentServiceImpl;
-import com.jazhnaneh.student.dto.StudentDTO;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;

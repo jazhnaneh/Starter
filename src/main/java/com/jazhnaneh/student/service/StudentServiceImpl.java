@@ -1,6 +1,9 @@
 package com.jazhnaneh.student.service;
 
+import com.jazhnaneh.student.exeption.NotConfirmNationalCodeException;
+import com.jazhnaneh.student.exeption.NotConfirmPhoneNumberException;
 import com.jazhnaneh.student.exeption.NotFoundException;
+import com.jazhnaneh.student.exeption.SaveImageException;
 import com.jazhnaneh.student.model.Student;
 import com.jazhnaneh.student.repository.StudentRepo;
 import org.apache.commons.io.IOUtils;
@@ -20,8 +23,6 @@ import java.util.Optional;
 @Service
 public class StudentServiceImpl implements StudentService {
 
-//    List<Student> list=new ArrayList<>();
-
     @Autowired
     StudentRepo studentRepo;
 
@@ -33,6 +34,9 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public Student addStudent(Student student, MultipartFile file) {
 
+//        Optional<Student> byNationalCode = studentRepo.findByNationalCode(student.getNationalCode());
+//        Optional<Student> byPhoneNumber = studentRepo.findByPhoneNumber(student.getPhoneNumber());
+
         try {
             student.setImageName(file.getOriginalFilename());
             student.setImageType(file.getContentType());
@@ -40,8 +44,18 @@ public class StudentServiceImpl implements StudentService {
 
         } catch (IOException e) {
             e.printStackTrace();
-            System.out.println("addStudent " + e.getMessage());
+            throw new SaveImageException(e.getMessage());
         }
+
+        if (student.getPhoneNumber().length() != 11)
+            throw new NotConfirmPhoneNumberException("شماره موبایل باید 11 رقم باشد");
+        else if (student.getNationalCode().length() != 10)
+            throw new NotConfirmNationalCodeException("کد ملی باید 10 رقم باشد");
+      /*  else if (byNationalCode.isPresent())
+            throw new NotConfirmNationalCodeException("کد ملی در سیستم موجود می باشد");
+        else if (byPhoneNumber.isPresent())
+            throw new NotConfirmPhoneNumberException("کد ملی در سیستم موجود می باشد");*/
+
 
         studentRepo.save(student);
 
