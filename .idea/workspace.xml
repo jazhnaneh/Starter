@@ -3,46 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="b5f98df8-f211-4bd0-80cc-b91b925967cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/configuration/SwaggerCustomerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/configuration/SwaggerCustomerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/controller/HelloSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/controller/HelloSpring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/controller/LessonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/controller/LessonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/dto/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/dto/StudentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/exeption/ApiError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/exeption/ApiError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/exeption/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/exeption/NotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/exeption/RestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/exeption/RestExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/mapper/StudentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/model/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/model/Lesson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/repository/LessonRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/repository/LessonRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/repository/StudentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/repository/StudentRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/service/LessonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/service/LessonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/service/LessonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/service/LessonServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/service/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/service/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/configuration/SwaggerCustomerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/controller/HelloSpring.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/controller/LessonController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/controller/StudentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/dto/StudentDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/exeption/ApiError$ApiSubError.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/exeption/ApiError$ApiValidationError.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/exeption/ApiError.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/exeption/LowerCaseClassNameResolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/exeption/NotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/exeption/RestExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/mapper/StudentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/model/Lesson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/model/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/repository/LessonRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/repository/StudentRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/service/LessonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/service/LessonServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/service/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/service/StudentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/raya/test/mapper/StudentMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/jazhnaneh/starter/mapper/StudentMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/configuration/SwaggerCustomerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/configuration/SwaggerCustomerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/controller/HelloSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/controller/HelloSpring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/controller/LessonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/controller/LessonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/dto/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/dto/StudentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/exeption/ApiError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/exeption/ApiError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/exeption/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/exeption/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/exeption/RestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/exeption/RestExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/mapper/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/model/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/model/Lesson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/repository/LessonRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/repository/LessonRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/repository/StudentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/repository/StudentRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/service/LessonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/service/LessonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/service/LessonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/service/LessonServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/starter/service/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/service/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/jazhnaneh/starter/mapper/StudentMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/jazhnaneh/student/mapper/StudentMapperImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,19 +95,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Application (1)">
-    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="FirstLesson" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jazhnaneh.starter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jazhnaneh.starter.Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="FirstLesson" />
       <extension name="coverage">
@@ -138,6 +104,19 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.raya.test.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="FirstLesson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jazhnaneh.student.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jazhnaneh.student.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,7 +145,7 @@
       <workItem from="1583842506678" duration="5803000" />
       <workItem from="1583924144587" duration="6466000" />
       <workItem from="1583931958505" duration="3621000" />
-      <workItem from="1583993081498" duration="16198000" />
+      <workItem from="1583993081498" duration="17726000" />
     </task>
     <servers />
   </component>
@@ -186,38 +165,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="112" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584012138643" />
-    <state width="1323" height="161" key="GridCell.Tab.0.bottom" timestamp="1584013848776">
+    <state width="1323" height="161" key="GridCell.Tab.0.bottom" timestamp="1584014012325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584013848776" />
-    <state width="1323" height="161" key="GridCell.Tab.0.center" timestamp="1584013848776">
+    <state width="1323" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584014012325" />
+    <state width="1323" height="161" key="GridCell.Tab.0.center" timestamp="1584014012324">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584013848776" />
-    <state width="1323" height="161" key="GridCell.Tab.0.left" timestamp="1584013848775">
+    <state width="1323" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584014012324" />
+    <state width="1323" height="161" key="GridCell.Tab.0.left" timestamp="1584014012324">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584013848775" />
-    <state width="1323" height="161" key="GridCell.Tab.0.right" timestamp="1584013848776">
+    <state width="1323" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584014012324" />
+    <state width="1323" height="161" key="GridCell.Tab.0.right" timestamp="1584014012324">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584013848776" />
-    <state width="1323" height="161" key="GridCell.Tab.1.bottom" timestamp="1584013848777">
+    <state width="1323" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584014012324" />
+    <state width="1323" height="161" key="GridCell.Tab.1.bottom" timestamp="1584014012325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="161" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584013848777" />
-    <state width="1323" height="161" key="GridCell.Tab.1.center" timestamp="1584013848777">
+    <state width="1323" height="161" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584014012325" />
+    <state width="1323" height="161" key="GridCell.Tab.1.center" timestamp="1584014012325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="161" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584013848777" />
-    <state width="1323" height="161" key="GridCell.Tab.1.left" timestamp="1584013848776">
+    <state width="1323" height="161" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584014012325" />
+    <state width="1323" height="161" key="GridCell.Tab.1.left" timestamp="1584014012325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="161" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584013848776" />
-    <state width="1323" height="161" key="GridCell.Tab.1.right" timestamp="1584013848777">
+    <state width="1323" height="161" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584014012325" />
+    <state width="1323" height="161" key="GridCell.Tab.1.right" timestamp="1584014012325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="161" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584013848777" />
+    <state width="1323" height="161" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584014012325" />
     <state width="1323" height="256" key="GridCell.Tab.2.bottom" timestamp="1584013846613">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
