@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5f98df8-f211-4bd0-80cc-b91b925967cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_processor_1_3_1_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_3_1_Final.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FirstLesson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FirstLesson.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/controller/LessonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raya/test/controller/LessonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raya/test/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raya/test/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/repository/StudentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raya/test/repository/StudentRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raya/test/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/raya/test/service/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/raya/test/service/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/raya/test/controller/StudentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/raya/test/model/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/raya/test/service/StudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/raya/test/service/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/raya/test/service/StudentServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +62,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -127,7 +112,7 @@
       <workItem from="1583842506678" duration="5803000" />
       <workItem from="1583924144587" duration="6466000" />
       <workItem from="1583931958505" duration="3621000" />
-      <workItem from="1583993081498" duration="13646000" />
+      <workItem from="1583993081498" duration="14385000" />
     </task>
     <servers />
   </component>
@@ -143,6 +128,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1583993653842" />
+    <state x="463" y="112" key="FileChooserDialogImpl" timestamp="1584012138643">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="112" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584012138643" />
     <state width="1323" height="288" key="GridCell.Tab.0.bottom" timestamp="1584008050612">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -191,10 +180,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="256" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1584004518521" />
-    <state x="186" y="0" key="SettingsEditor" timestamp="1583994697762">
+    <state x="186" y="0" key="SettingsEditor" timestamp="1584012181408">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583994697762" />
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584012181408" />
     <state x="494" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584007582867">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
