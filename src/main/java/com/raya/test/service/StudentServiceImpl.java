@@ -3,14 +3,16 @@ package com.raya.test.service;
 import com.raya.test.exeption.NotFoundException;
 import com.raya.test.model.Student;
 import com.raya.test.repository.StudentRepo;
+import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
-import java.util.ArrayList;
+import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
@@ -29,8 +31,17 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Student addStudent(Student student) {
+    public Student addStudent(Student student, MultipartFile file) {
 
+        try {
+            student.setImageName(file.getOriginalFilename());
+            student.setImageType(file.getContentType());
+            student.setImage(IOUtils.toByteArray(file.getInputStream()));
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("addStudent " + e.getMessage());
+        }
 
         studentRepo.save(student);
 
@@ -50,7 +61,7 @@ public class StudentServiceImpl implements StudentService {
 
 
     @Override
-    public String updateStudent(Long id,String name,int age) {
+    public String updateStudent(Long id, String name, int age) {
 
 
         Optional<Student> student = studentRepo.findById(id);
@@ -75,15 +86,12 @@ public class StudentServiceImpl implements StudentService {
 
 
         Optional<Student> student = studentRepo.findById(id);
-        if (student.isPresent())
-        {
-
+        if (student.isPresent()) {
 
 
             studentRepo.deleteById(id);
             return "delete shod";
-        }
-        else {
+        } else {
 
             throw new RuntimeException();
 

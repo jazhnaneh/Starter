@@ -45,6 +45,13 @@
             <artifactId>postgresql</artifactId>
             <version>42.2.8</version>
         </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>

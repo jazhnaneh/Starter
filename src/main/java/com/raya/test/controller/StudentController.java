@@ -7,9 +7,13 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ByteArrayResource;
 import org.springframework.data.domain.Page;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.net.ssl.HttpsURLConnection;
 import javax.validation.Valid;
@@ -25,20 +29,20 @@ public class StudentController {
 
 
     @GetMapping("/getAll")
-    public List<Student> getAllData(){
+    public List<Student> getAllData() {
 
         return studentService.getAll();
     }
 
     @PostMapping("/updateStudent")
-    public String updateStudent(@RequestBody Map<String,Object> data){
+    public String updateStudent(@RequestBody Map<String, Object> data) {
 
         String name = (String) data.get("name");
         Long id = ((Number) data.get("id")).longValue();
         int age = (int) data.get("age");
 
 
-        return studentService.updateStudent(id,name,age);
+        return studentService.updateStudent(id, name, age);
     }
 
 
@@ -50,8 +54,6 @@ public class StudentController {
     }
 
 
-
-
     @ApiOperation(value = "Add or insert student")
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "Added successfully"),
@@ -59,14 +61,16 @@ public class StudentController {
             @ApiResponse(code = 409, message = "It is duplicate"),
             @ApiResponse(code = 500, message = "Server error")
     })
-    @PostMapping("/addStudent")
-    public ResponseEntity<Void> addStudent(@RequestBody @Valid Student param){
 
-        studentService.addStudent(param);
+    @PostMapping(value = "/addStudent")
+    public ResponseEntity<Void> addStudent(@Valid Student param, @RequestPart("user_image") MultipartFile file) {
+
+        studentService.addStudent(param, file);
 
         return ResponseEntity.status(HttpsURLConnection.HTTP_CREATED).build();
     }
-//
+
+    //
 //    @PutMapping("/get")
 //    public String PutMapping(){
 //
@@ -78,10 +82,19 @@ public class StudentController {
 //
 //        return "PatchMapping";
 //    }
-   @GetMapping("/delete/{id}")
-    public String DeleteMapping(@PathVariable("id") Long id){
-       studentService.deleteStudent(id);
-        return "delet shod ba in id:"+id;
+    @GetMapping("/delete/{id}")
+    public String DeleteMapping(@PathVariable("id") Long id) {
+        studentService.deleteStudent(id);
+        return "delet shod ba in id:" + id;
+    }
+
+ @GetMapping(value = "/getStudentProfileImage/{id}")
+    public ResponseEntity<ByteArrayResource> getStudentProfileImage(@PathVariable("id") Long id) {
+     Student student = studentService.getStudent(id);
+     return ResponseEntity.ok()
+             .contentType(MediaType.parseMediaType(student.getImageType()))
+             .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + student.getImageName() + "\"")
+             .body(new ByteArrayResource(student.getImage()));
     }
 
 

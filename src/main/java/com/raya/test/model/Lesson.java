@@ -1,7 +1,9 @@
 package com.raya.test.model;
 
 
-import com.sun.istack.internal.NotNull;
+
+
+import com.sun.istack.NotNull;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;

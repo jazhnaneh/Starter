@@ -2,7 +2,7 @@ package com.raya.test.model;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.sun.istack.internal.NotNull;
+import com.sun.istack.NotNull;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -32,18 +32,27 @@ public class Student {
     @Column(name = "age")
     private int age;
 
+    @Column(name = "image_name")
+    private String imageName;
+
+    @Column(name = "image_type")
+    private String imageType;
+
+    @Lob
+    @Column(name = "image")
+    private byte[] image;
 
 
-    @OneToMany(mappedBy = "student", fetch=FetchType.LAZY,orphanRemoval = true)
+    @OneToMany(mappedBy = "student", fetch = FetchType.LAZY, orphanRemoval = true)
     @JsonIgnore
     private List<Lesson> lessons;
 
 
-    @Column(name = "CREATED_AT",nullable = false, updatable = false)
+    @Column(name = "CREATED_AT", nullable = false, updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdAt;
 
-    @Column(name = "UPDATE_AT",nullable = true)
+    @Column(name = "UPDATE_AT", nullable = true)
     @Temporal(TemporalType.TIMESTAMP)
     private Date updatedAt;
 
@@ -94,6 +103,30 @@ public class Student {
 
     public void setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    public String getImageName() {
+        return imageName;
+    }
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
+    }
+
+    public String getImageType() {
+        return imageType;
+    }
+
+    public void setImageType(String imageType) {
+        this.imageType = imageType;
+    }
+
+    public byte[] getImage() {
+        return image;
+    }
+
+    public void setImage(byte[] image) {
+        this.image = image;
     }
 
     @PrePersist
