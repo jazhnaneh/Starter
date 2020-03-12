@@ -1,7 +1,6 @@
 package com.raya.test.model;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.istack.NotNull;
 
 import javax.persistence.*;
@@ -44,7 +43,6 @@ public class Student {
 
 
     @OneToMany(mappedBy = "student", fetch = FetchType.LAZY, orphanRemoval = true)
-    @JsonIgnore
     private List<Lesson> lessons;
 
 

@@ -61,22 +61,20 @@ public class StudentServiceImpl implements StudentService {
 
 
     @Override
-    public String updateStudent(Long id, String name, int age) {
+    public String updateStudent(Long id, Student student) {
 
+        Optional<Student> studentSearch = studentRepo.findById(id);
 
-        Optional<Student> student = studentRepo.findById(id);
+        if (studentSearch.isPresent()) {
 
+            Student studentUpdate = studentSearch.get();
 
-        if (student.isPresent()) {
-
-            Student test = student.get();
-
-            test.setAge(age);
-            test.setName(name);
-            studentRepo.save(test);
-        } else
+            studentUpdate.setAge(student.getAge());
+            studentUpdate.setName(student.getName());
+            studentRepo.save(studentUpdate);
+        } else {
             throw new RuntimeException();
-
+        }
 
         return "update shod";
     }

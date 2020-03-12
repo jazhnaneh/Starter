@@ -2,16 +2,12 @@ package com.raya.test.controller;
 
 
 import com.raya.test.model.Lesson;
-import com.raya.test.model.Student;
 import com.raya.test.service.LessonServiceImpl;
-import com.raya.test.service.StudentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.net.ssl.HttpsURLConnection;
-import javax.validation.Valid;
 import java.util.List;
 import java.util.Map;
 
@@ -24,7 +20,7 @@ public class LessonController {
 
 
     @GetMapping("/getAll")
-    public List<Lesson> getAllData(){
+    public List<Lesson> getAllData() {
 
         return lessonService.getAll();
     }
@@ -44,21 +40,17 @@ public class LessonController {
     }
 
 
-
-
-
     @PostMapping("/addLesson")
-    public ResponseEntity<Void> addStudent(@RequestBody Map<String, Object> data){
+    public ResponseEntity<Void> addStudent(@RequestBody Map<String, Object> data) {
         Long parentId = ((Number) data.get("parentId")).longValue();
-String  title= (String) data.get("title");
+        String title = (String) data.get("title");
 
-        Lesson lesson=new Lesson();
+        Lesson lesson = new Lesson();
         lesson.setTitle(title);
-        lessonService.addLesson(lesson,parentId);
+        lessonService.addLesson(lesson, parentId);
 
         return ResponseEntity.status(HttpsURLConnection.HTTP_CREATED).build();
     }
-
 
 
 }
