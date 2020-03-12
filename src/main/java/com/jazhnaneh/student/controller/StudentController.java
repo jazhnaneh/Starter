@@ -20,6 +20,7 @@ import javax.net.ssl.HttpsURLConnection;
 import javax.validation.Valid;
 import java.util.List;
 
+@CrossOrigin(origins = "*",allowedHeaders = "*")
 @RestController
 @RequestMapping("/student")
 public class StudentController {
