@@ -1,0 +1,27 @@
+
+/.idea/
+
+/bdood.iml
+*/target/**
+ *.iml
+ /adminpanel/target/**
+ /adminpanel/*.iml
+
+
+ /bdoodkar/target/**
+ /bdoodkar/*.iml
+ /bdoodkar/bdoodkar.iml.iml
+ /core/target/**
+ /core/*.iml
+ /core/core.iml
+ /customer/target/**
+ /customer/*.iml
+ /customer/customer.iml
+
+**/target
+**/*.iml
+
+**/logs
+**/*.log
+/logs/**
+
