@@ -1,0 +1,77 @@
+
+  
+  .table-fixed tbody {
+    height: 500px;
+    overflow-y: auto;
+    width: 100%;
+  }
+  
+  h2{
+    color: #2bbbad;
+    float: right;
+    padding-right: 40px;
+    padding-top: 15px;
+  }
+  
+  .table-wrapper-scroll-y {
+    display: block;
+    height: 500px;
+  }
+  
+  
+  .btn.btn-icon.btn-circle {
+    border-radius: 50%;
+  
+  }
+
+  .btn-success {
+    border-radius: 50%;
+  
+  }
+
+  tr, td {
+    padding-top:12px;
+    padding-bottom:12px;
+  
+  }
+  
+  
+  th{
+    color:  white;
+    padding: 10px;
+  }
+  
+  
+  thead{
+    background: #343a40;
+    text-align: right;
+  }
+  
+
+  tbody{
+
+    text-align: right;
+  }
+  
+
+  
+  
+  h5 {
+    color: #2bbbad;
+    float: right;
+    /* padding-right: 40px; */
+    padding-top: 15px;
+  }
+
+
+  span{
+    cursor: pointer;
+    /* color: green; */
+  }
+
+  .spandelete{
+    color: red;
+  }
+
+
+  .spaneupdate{color: green;}

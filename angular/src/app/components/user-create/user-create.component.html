@@ -1,0 +1,54 @@
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 p-5 mx-auto">
+  <div class="card shadow pl-4 pr-4 pb-2">
+    <div class="header">
+      <h5 class="mt-3 mb-4"><strong>کاربر جدید</strong></h5>
+    </div>
+    <div class="body">
+      <form  autocomplete="off" id="saveUser">
+      <div class="form-row">
+        <div class="form-group col-6">
+          <label><label class="requiredcolor">*</label>نام خانوادگی</label>
+          <input class="form-control" type="text" [(ngModel)]="user.studentFamily" name="studentFamily">
+        </div>
+        <div class="form-group col-6">
+          <label><label class="requiredcolor">*</label>نام</label>
+          <input class="form-control" type="text" [(ngModel)]="user.studentName" name="studentName" autofocus>
+        </div>
+      
+      </div>
+      <div class="form-row">
+       
+      </div>
+      <div class='form-row'>
+        <div class="form-group col-6">
+          <label><label class="requiredcolor">*</label>سن</label>
+          <input class="form-control" type="number" [(ngModel)]="user.studentAge" name="studentAge">
+        </div>
+        <div class="form-group col-6">
+          <label><label class="requiredcolor">*</label>کد ملی</label>
+          <input class="form-control" type="text" [(ngModel)]="user.studentNationalCode" name="studentNationalCode" maxlength='10'>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-6">
+          <label><label class="requiredcolor"> *</label> عکس</label>
+          <input class="input-group mt-5" type="file"  name="file"  (change)="selectFile($event)">
+        </div>
+        <div class="form-group col-6">
+          <label><label class="requiredcolor">*</label>تلفن</label>
+          <input class="form-control" type="text" [(ngModel)]="user.studentPhoneNumber" maxlength='11' name="studentPhoneNumber">
+        </div>
+      </div>
+    </form>
+    </div>
+    <br>
+    <div class="justify-content-md-center">
+      <button class="btn btn-danger float-left mr-2 mt-3 mb-3"><i class="fa fa-close"></i>
+        انصراف
+      </button>
+      <button class="btn btn-success mt-3 float-left " (click)='addUser()' type="submit">
+        <i class="fa fa-check"></i> &nbsp;ثبت &nbsp;
+      </button>
+    </div>
+  </div>
+</div>
