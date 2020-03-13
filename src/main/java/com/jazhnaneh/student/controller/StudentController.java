@@ -101,7 +101,6 @@ public class StudentController {
 
 
 
-        System.out.println("get it2");
 
         List<Student> studentList=studentService.filter(page,size,studentName,studentFamily,age);
 List<StudentDTO> studentDTOS= studentMapper.toStudentsDTO(studentList);
