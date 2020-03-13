@@ -4,8 +4,11 @@ import com.jazhnaneh.student.exeption.NotConfirmNationalCodeException;
 import com.jazhnaneh.student.exeption.NotConfirmPhoneNumberException;
 import com.jazhnaneh.student.exeption.NotFoundException;
 import com.jazhnaneh.student.exeption.SaveImageException;
+import com.jazhnaneh.student.model.QStudent;
 import com.jazhnaneh.student.model.Student;
 import com.jazhnaneh.student.repository.StudentRepo;
+import com.querydsl.core.BooleanBuilder;
+import com.querydsl.core.types.Predicate;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -122,5 +125,38 @@ public class StudentServiceImpl implements StudentService {
         return testModels;
 
 
+    }
+
+    @Override
+    public List<Student> filter(int page, int pageSize, String studentName, String studentFamily, Integer age) {
+        BooleanBuilder booleanBuilder = new BooleanBuilder();
+        QStudent qStudent= QStudent.student;
+        if (studentName != null && !studentName.isEmpty()) {
+            booleanBuilder.and(qStudent.name.eq(studentName));
+        }
+
+        if (studentFamily != null && !studentFamily.isEmpty()) {
+            booleanBuilder.and(qStudent.family.eq(studentFamily));
+        }
+
+        if (age != null && age != 0) {
+            booleanBuilder.and(qStudent.age.goe(age));
+        }
+
+
+
+
+        Page<Student> page1= studentRepo.findAll(booleanBuilder.getValue(),
+                PageRequest.of(page, pageSize, Sort.by(Sort.Direction.ASC, "idStudent")));
+
+   return page1.getContent();
+    }
+
+    @Override
+    public List<Student> simplifiedFilter(int page, int pageSize, Predicate predicate) {
+        Page<Student> page1= studentRepo.findAll(predicate,
+                PageRequest.of(page, pageSize, Sort.by(Sort.Direction.ASC, "idStudent")));
+
+        return page1.getContent();
     }
 }
