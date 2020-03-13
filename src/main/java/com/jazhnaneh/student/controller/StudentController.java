@@ -124,6 +124,7 @@ List<StudentDTO> studentDTOS= studentMapper.toStudentsDTO(studentList);
 
 
 
+
         List<Student> studentList=studentService.simplifiedFilter(page,size,predicate);
 List<StudentDTO> studentDTOS= studentMapper.toStudentsDTO(studentList);
                 return ResponseEntity.ok(studentDTOS);
