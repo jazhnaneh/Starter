@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5f98df8-f211-4bd0-80cc-b91b925967cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FirstLesson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FirstLesson.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/configuration/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/configuration/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/controller/HelloSpring.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/controller/HelloSpring.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/controller/LessonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/controller/LessonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/controller/StudentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/controller/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/controller/UsersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/filters/JwtAuthenticationEntryPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/filters/JwtAuthenticationEntryPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/filters/JwtRequestFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/filters/JwtRequestFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/filters/JwtToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/filters/JwtToken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/model/AuthenticationResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/model/AuthenticationResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/service/JwtUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/service/JwtUserDetailsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jazhnaneh/student/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/jazhnaneh/student/mapper/StudentMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/jazhnaneh/student/mapper/StudentMapperImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,12 +40,6 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="36" />
-    <option name="y" value="287" />
-    <option name="width" value="1382" />
-    <option name="height" value="788" />
   </component>
   <component name="ProjectId" id="1Z144kaXWQfrtc76z1OMcOOYLVo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">

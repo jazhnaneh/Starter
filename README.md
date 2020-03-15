@@ -1,7 +1,7 @@
 # Starter
  spring boot & angular starter tutorial https://www.aparat.com/jezhnana
 
-##Disable spring security
+## Disable spring security
 
 go to **configuration/WebSecurityConfig.java**  and then write below code to configure method
   
