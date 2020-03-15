@@ -1,0 +1,46 @@
+
+<div class="card shadow mt-5 ml-3 mr-3 pl-3 pr-3 pb-3">
+  <div class="header">
+    <h5 class="mb-4">لیست کاربران </h5>
+    <button class="btn btn-success float-left ml-2 mt-3" data-toggle="tooltip" title="کاربر جدید" [routerLink]="'/userCreate'"><i
+      class="fa fa-plus"></i>
+    </button>
+  </div>
+  <table
+         class="row-border hover table-striped table-hover border w-100"
+         id="userTable">
+    <thead class="thead-dark">
+    <tr>
+      <th>عملیات</th>
+      <th>تلفن</th>
+      <th>کد ملی</th>
+      <th>نام خانوادگی</th>
+      <th>نام</th>
+      <th>کد</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of userlist">
+        <td>
+      
+       <span class="spandelete" data-toggle="tooltip" title="حذف">
+        <i class="fa fa-trash fa-x danger" ></i>
+     </span>
+     &nbsp;
+     <span class="spaneupdate" data-toggle="tooltip" title="ویرایش اطلاعات">
+      <i  class="fa fa-pencil fa-x"></i>
+   </span>
+      
+      </td>
+        <td>{{user.studentPhoneNumber}}</td>
+        <td>{{user.studentNationalCode}}</td>
+        <td>{{user.studentFamily}}</td>
+        <td>{{user.studentName}}</td>
+        <td>{{user.studentId}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+

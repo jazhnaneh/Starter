@@ -1,6 +1,7 @@
 package com.jazhnaneh.student.model;
 
 
+import com.querydsl.core.annotations.QueryEntity;
 import com.sun.istack.NotNull;
 
 import javax.persistence.*;
@@ -11,6 +12,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "Student")
+@QueryEntity
 public class Student {
 
 
@@ -51,6 +53,7 @@ public class Student {
 
     @Lob
     @Column(name = "image")
+
     private byte[] image;
 
 

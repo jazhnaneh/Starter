@@ -1,0 +1,21 @@
+
+  h5{
+    color: #2bbbad;
+    float: right;
+  }
+
+
+label{
+    color: black;
+    float: right;
+    padding-right: 10px;
+  }
+
+
+  
+  .requiredcolor{
+    color: red;
+    float: left;
+  }
+
+input{direction: rtl;}

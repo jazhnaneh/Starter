@@ -1,6 +1,7 @@
 package com.jazhnaneh.student.dto;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.annotations.ApiModelProperty;
 
 
@@ -22,6 +23,7 @@ public class StudentDTO {
     private String studentImageType;
 
     @ApiModelProperty(required = false, hidden = true)
+    @JsonIgnore
     private byte[] studentImage;
 
     @ApiModelProperty(required = true, hidden = false)

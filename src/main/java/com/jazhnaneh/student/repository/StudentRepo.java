@@ -3,12 +3,14 @@ package com.jazhnaneh.student.repository;
 import com.jazhnaneh.student.model.Student;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.data.repository.PagingAndSortingRepository;
+
 
 import java.util.List;
 import java.util.Optional;
 
-public interface StudentRepo extends PagingAndSortingRepository<Student, Long> {
+public interface StudentRepo extends PagingAndSortingRepository<Student, Long>,QuerydslPredicateExecutor<Student> {
 
     Optional<Student> findById(Long id);
 

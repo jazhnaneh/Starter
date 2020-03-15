@@ -1,0 +1,213 @@
+
+@import '../assets/font-awesome/css/font-awesome.css';
+
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/Yekan-modified.eot');
+    src:
+         url('../fonts/Yekan-modified.woff') format('woff'),
+         url('../fonts/Yekan-modified.ttf') format('truetype'),
+         url('../fonts/Yekan-modified.svg') format('svg');
+         
+    font-weight: normal;
+    font-style: normal;
+}
+/* .card{
+    height: 700px;
+    width: 100%;
+} */
+
+label{float: right;}
+.mt{
+    margin-top: -2%;
+    float: right;
+    color: #395870;
+}
+
+.comboHeight {
+    padding-top: 0px;
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #4a4a4d;
+    /* font-family: yekan; */
+  }
+  
+  th,
+  td {
+    padding: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  thead {
+    background: #395870;
+    color: rgb(199, 194, 194);
+    /* font-family: yekan; */
+  }
+  
+  /* th {
+  font-weight: bold;
+  } */
+  
+  /* th:first-child {
+  text-align: right;
+  } */
+  tbody tr:nth-child(even) {
+    background: #f0f0f2;
+  }
+  
+  td {
+    border-bottom: 1px solid #cecfd5;
+    border-right: 1px solid #cecfd5;
+  }
+  
+  td:first-child {
+    border-left: 1px solid #cecfd5;
+  }
+
+
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #4a4a4d;
+    /* font-family: yekan; */
+  }
+  
+  th,
+  td {
+    padding: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  thead {
+    background: #395870;
+    color: rgb(199, 194, 194);
+    /* font-family: yekan; */
+  }
+  
+  /* th {
+  font-weight: bold;
+  } */
+  
+  /* th:first-child {
+  text-align: right;
+  } */
+  tbody tr:nth-child(even) {
+    background: #f0f0f2;
+  }
+  
+  td {
+    border-bottom: 1px solid #cecfd5;
+    border-right: 1px solid #cecfd5;
+  }
+  
+  td:first-child {
+    border-left: 1px solid #cecfd5;
+  }
+  
+  .item-multiple {
+    display: block;
+  }
+  
+  tfoot {
+    text-align: right;
+  }
+  
+  tfoot tr:last-child {
+    background: #f0f0f2;
+  }
+  
+  .right {
+    position: absolute;
+    right: 200px;
+    width: 300px;
+    padding: 30px;
+    top: 10px;
+  }
+  
+  .left {
+    position: absolute;
+    right: 700px;
+    width: 300px;
+    padding: 30px;
+    top: 150px;
+  }
+  
+  .button1 {
+    right: 130px;
+    background: orangered;
+    color: white;
+  }
+  
+ 
+  .tb {
+    overflow-y: auto;
+    max-height: 420px;
+    width: 95%;
+    /* margin-right: 150px; */
+  
+  }
+  
+
+  
+
+  
+ 
+  
+  
+  .btn-dangerr {
+    background-color: #ff6c60;
+    border-color: #ff6c60;
+    color: #FFFFFF;
+    height: 30px;
+    width: 110px;
+    font-family: yekan;
+    font-size: 18px;
+    padding-top: 0px;
+    text-align: center;
+  }
+  
+  .bell-btn{
+    padding-top: 0px;
+  }
+  
+  .not{
+    text-align: right;
+  }
+  
+  .sub-menu{
+    float: right;
+  
+  }
+  
+  .d{
+    margin-left: 1%
+  }
+  
+  .position{
+    float: right;
+  }
+
+  
+
+  .right {
+    position: absolute;
+    right: 200px;
+    width: 300px;
+    padding: 30px;
+  }
+  
+  
+  .left {
+    position: absolute;
+    /*right: 500px;*/
+    width: 300px;
+    padding: 30px;
+    left: 200px;
+  }
+  
+ 
+  
