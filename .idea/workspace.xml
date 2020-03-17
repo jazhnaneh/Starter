@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5f98df8-f211-4bd0-80cc-b91b925967cb" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+=======
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+>>>>>>> a74e580eb177b0d068a8ca965c5f222db42df85a
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,9 +32,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+<<<<<<< HEAD
         <option value="JUnit5 Test Class" />
+=======
+        <option value="Interface" />
+>>>>>>> a74e580eb177b0d068a8ca965c5f222db42df85a
       </list>
     </option>
   </component>
@@ -53,10 +61,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="starter" />
+=======
+    <property name="DatabaseDriversLRU" value="postgresql" />
+>>>>>>> a74e580eb177b0d068a8ca965c5f222db42df85a
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelOrder2" value="2" />
@@ -73,10 +85,17 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+<<<<<<< HEAD
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+=======
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+>>>>>>> a74e580eb177b0d068a8ca965c5f222db42df85a
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -86,19 +105,22 @@
       <recent name="com.jazhnaneh.student" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.jazhnaneh.student.exeption" />
-      <recent name="com.raya.test.dto" />
-      <recent name="com.raya.test.controller" />
-      <recent name="com.raya.test.service" />
-      <recent name="com.raya.test.repository" />
+      <recent name="com.jazhnaneh.student.enums" />
+      <recent name="com.jazhnaneh.student.repository" />
+      <recent name="com.jazhnaneh.student.service" />
+      <recent name="com.jazhnaneh.student.controller" />
+      <recent name="com.jazhnaneh.student.model" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\springboot_starter\jazhnaneh\src\main\java\com\jazhnaneh\student\model" />
+      <recent name="D:\springboot_starter\jazhnaneh\src\main\resources\template" />
       <recent name="C:\Users\Xaniar\Desktop\ss\FirstLesson\src\main\java\com\raya\test\exeption" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -218,6 +240,10 @@
       <method v="2" />
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+=======
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+>>>>>>> a74e580eb177b0d068a8ca965c5f222db42df85a
       <module name="FirstLesson" />
       <extension name="coverage">
         <pattern>
@@ -256,11 +282,15 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="JUnit.StudentServiceImplTest.crudTest" />
         <item itemvalue="JUnit.StudentServiceImplTest" />
         <item itemvalue="JUnit.StudentServiceImplTest (2)" />
         <item itemvalue="JUnit.StudentServiceImplTest (1)" />
         <item itemvalue="JUnit.StudentServiceImplTest.getAll" />
+=======
+        <item itemvalue="Spring Boot.Application" />
+>>>>>>> a74e580eb177b0d068a8ca965c5f222db42df85a
       </list>
     </recent_temporary>
   </component>
@@ -283,6 +313,12 @@
       <workItem from="1583931958505" duration="3621000" />
       <workItem from="1583993081498" duration="25158000" />
       <workItem from="1584033938932" duration="2289000" />
+      <workItem from="1584040101311" duration="5837000" />
+      <workItem from="1584051973034" duration="1293000" />
+      <workItem from="1584053501455" duration="12850000" />
+      <workItem from="1584128547379" duration="7097000" />
+      <workItem from="1584136357651" duration="11577000" />
+      <workItem from="1584185727619" duration="16526000" />
       <workItem from="1584114448970" duration="9984000" />
       <workItem from="1584225406057" duration="524000" />
       <workItem from="1584272171374" duration="6535000" />
@@ -321,73 +357,48 @@
     <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1584024866921">
+    <state x="488" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1584277385103" />
+    <state x="488" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1584277385103" />
+    <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584277385103" />
+    <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1584277385103" />
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584277385103" />
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1584277385103" />
+    <state x="413" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584277385103" />
+    <state x="413" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584277385103" />
+    <state x="463" y="112" key="FileChooserDialogImpl" timestamp="1584277385103" />
+    <state x="463" y="112" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584277385103" />
+    <state width="1323" height="316" key="GridCell.Tab.0.bottom" timestamp="1584293002088">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1584024866921" />
-    <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1583993653842">
+    <state width="1323" height="316" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584293002088" />
+    <state width="1323" height="316" key="GridCell.Tab.0.center" timestamp="1584293002088">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1583993653842" />
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584027839871">
+    <state width="1323" height="316" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584293002088" />
+    <state width="1323" height="316" key="GridCell.Tab.0.left" timestamp="1584293002088">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1584027839871" />
-    <state x="413" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584026226599">
+    <state width="1323" height="316" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584293002088" />
+    <state width="1323" height="316" key="GridCell.Tab.0.right" timestamp="1584293002088">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584026226599" />
-    <state x="463" y="112" key="FileChooserDialogImpl" timestamp="1584012138643">
+    <state width="1323" height="316" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584293002088" />
+    <state width="1323" height="316" key="GridCell.Tab.1.bottom" timestamp="1584293002089">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="112" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584012138643" />
-    <state width="1323" height="255" key="GridCell.Tab.0.bottom" timestamp="1584029750324">
+    <state width="1323" height="316" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584293002089" />
+    <state width="1323" height="316" key="GridCell.Tab.1.center" timestamp="1584293002088">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="255" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584029750324" />
-    <state width="1323" height="255" key="GridCell.Tab.0.center" timestamp="1584029750324">
+    <state width="1323" height="316" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584293002088" />
+    <state width="1323" height="316" key="GridCell.Tab.1.left" timestamp="1584293002088">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="255" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584029750324" />
-    <state width="1323" height="255" key="GridCell.Tab.0.left" timestamp="1584029750323">
+    <state width="1323" height="316" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584293002088" />
+    <state width="1323" height="316" key="GridCell.Tab.1.right" timestamp="1584293002088">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="255" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584029750323" />
-    <state width="1323" height="255" key="GridCell.Tab.0.right" timestamp="1584029750324">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="255" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584029750324" />
-    <state width="1323" height="255" key="GridCell.Tab.1.bottom" timestamp="1584029750324">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="255" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584029750324" />
-    <state width="1323" height="255" key="GridCell.Tab.1.center" timestamp="1584029750324">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="255" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584029750324" />
-    <state width="1323" height="255" key="GridCell.Tab.1.left" timestamp="1584029750324">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="255" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584029750324" />
-    <state width="1323" height="255" key="GridCell.Tab.1.right" timestamp="1584029750324">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="255" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584029750324" />
-    <state width="1323" height="256" key="GridCell.Tab.2.bottom" timestamp="1584013846613">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="256" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584013846613" />
-    <state width="1323" height="256" key="GridCell.Tab.2.center" timestamp="1584013846613">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="256" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1584013846613" />
-    <state width="1323" height="256" key="GridCell.Tab.2.left" timestamp="1584013846613">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="256" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1584013846613" />
-    <state width="1323" height="256" key="GridCell.Tab.2.right" timestamp="1584013846613">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
+<<<<<<< HEAD
     <state width="1323" height="256" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1584013846613" />
     <state x="186" y="0" key="SettingsEditor" timestamp="1584012181408">
       <screen x="0" y="0" width="1366" height="728" />
@@ -401,6 +412,23 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="0" width="586" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1584013802786" />
+=======
+    <state width="1323" height="316" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584293002088" />
+    <state width="1323" height="256" key="GridCell.Tab.2.bottom" timestamp="1584277385103" />
+    <state width="1323" height="256" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584277385103" />
+    <state width="1323" height="256" key="GridCell.Tab.2.center" timestamp="1584277385103" />
+    <state width="1323" height="256" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1584277385103" />
+    <state width="1323" height="256" key="GridCell.Tab.2.left" timestamp="1584277385103" />
+    <state width="1323" height="256" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1584277385103" />
+    <state width="1323" height="256" key="GridCell.Tab.2.right" timestamp="1584277385103" />
+    <state width="1323" height="256" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1584277385103" />
+    <state x="186" y="0" key="SettingsEditor" timestamp="1584277385103" />
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584277385103" />
+    <state x="494" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584277385103" />
+    <state x="494" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1584277385103" />
+    <state x="390" y="0" width="586" height="728" key="find.popup" timestamp="1584277385103" />
+    <state x="390" y="0" width="586" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1584277385103" />
+>>>>>>> a74e580eb177b0d068a8ca965c5f222db42df85a
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">

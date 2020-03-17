@@ -2,6 +2,7 @@ package com.jazhnaneh.student.controller;
 
 
 import com.jazhnaneh.student.model.Student;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
