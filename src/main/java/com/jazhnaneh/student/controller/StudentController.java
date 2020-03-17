@@ -3,7 +3,6 @@ package com.jazhnaneh.student.controller;
 
 import com.jazhnaneh.student.dto.StudentDTO;
 import com.jazhnaneh.student.mapper.StudentMapper;
-import com.jazhnaneh.student.model.QStudent;
 import com.jazhnaneh.student.model.Student;
 import com.jazhnaneh.student.service.StudentServiceImpl;
 import com.querydsl.core.BooleanBuilder;
@@ -28,7 +27,7 @@ import javax.validation.Valid;
 import java.time.Instant;
 import java.util.List;
 
-@CrossOrigin(origins = "*",allowedHeaders = "*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/student")
 public class StudentController {
@@ -87,48 +86,34 @@ public class StudentController {
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + student.getImageName() + "\"")
                 .body(new ByteArrayResource(student.getImage()));
     }
+
     @GetMapping
     public ResponseEntity<List<StudentDTO>> students(
             @RequestParam(name = "page", defaultValue = "0") int page,
             @RequestParam(name = "size", defaultValue = "500") int size,
             @RequestParam(name = "studentName", required = false) String studentName,
             @RequestParam(name = "studentFamily", required = false) String studentFamily,
-            @RequestParam(name = "age", required = false) Integer age)
-            {
+            @RequestParam(name = "age", required = false) Integer age) {
 
 
-
-
-
-
-
-        List<Student> studentList=studentService.filter(page,size,studentName,studentFamily,age);
-List<StudentDTO> studentDTOS= studentMapper.toStudentsDTO(studentList);
-                return ResponseEntity.ok(studentDTOS);
-
+        List<Student> studentList = studentService.filter(page, size, studentName, studentFamily, age);
+        List<StudentDTO> studentDTOS = studentMapper.toStudentsDTO(studentList);
+        return ResponseEntity.ok(studentDTOS);
 
 
     }
+
     @GetMapping("/simplified")
     public ResponseEntity<List<StudentDTO>> filterStudents(
             @QuerydslPredicate(root = Student.class) Predicate predicate,
             @RequestParam(name = "page", defaultValue = "0") int page,
             @RequestParam(name = "size", defaultValue = "500") int size
-            )
-            {
+    ) {
 
 
-
-
-
-
-
-
-
-        List<Student> studentList=studentService.simplifiedFilter(page,size,predicate);
-List<StudentDTO> studentDTOS= studentMapper.toStudentsDTO(studentList);
-                return ResponseEntity.ok(studentDTOS);
-
+        List<Student> studentList = studentService.simplifiedFilter(page, size, predicate);
+        List<StudentDTO> studentDTOS = studentMapper.toStudentsDTO(studentList);
+        return ResponseEntity.ok(studentDTOS);
 
 
     }

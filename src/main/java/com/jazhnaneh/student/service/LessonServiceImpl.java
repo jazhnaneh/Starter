@@ -19,6 +19,7 @@ public class LessonServiceImpl implements LessonService {
     StudentServiceImpl studentService;
 
 
+
     @Override
     public List<Lesson> getAll() {
         return lessonRepo.findAll();
@@ -37,10 +38,11 @@ public class LessonServiceImpl implements LessonService {
         return savedLesson;
     }
 
-    @Override
-    public List<Lesson> getAll(Long id ) {
 
-        Student student=studentService.getStudent(id);
+    @Override
+    public List<Lesson> getAll(Long id) {
+
+        Student student = studentService.getStudent(id);
 
         List<Lesson> lessons = lessonRepo.findAllByStudent(student);
 

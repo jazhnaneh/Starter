@@ -36,6 +36,7 @@ public class StudentDTO {
     private String studentNationalCode;
 
 
+
     public Long getStudentId() {
         return studentId;
     }

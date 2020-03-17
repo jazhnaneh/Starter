@@ -69,6 +69,16 @@ public class Student {
     @Temporal(TemporalType.TIMESTAMP)
     private Date updatedAt;
 
+    public Student() {
+    }
+
+    public Student(@NotBlank String name, @NotBlank String family, @NotBlank String phoneNumber, @NotBlank String nationalCode, int age) {
+        this.name = name;
+        this.family = family;
+        this.phoneNumber = phoneNumber;
+        this.nationalCode = nationalCode;
+        this.age = age;
+    }
 
     public Long getIdStudent() {
         return idStudent;

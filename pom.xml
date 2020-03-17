@@ -77,6 +77,20 @@
             <version>4.2.1</version>
         </dependency>
 
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+
+
     </dependencies>
     <build>
         <plugins>
@@ -115,11 +129,11 @@
                             <artifactId>mapstruct-processor</artifactId>
                             <version>1.3.0.Beta2</version>
                         </path>
-                      <!--  <path>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                            <version>1.18.4</version>
-                        </path>-->
+                        <!--  <path>
+                              <groupId>org.projectlombok</groupId>
+                              <artifactId>lombok</artifactId>
+                              <version>1.18.4</version>
+                          </path>-->
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
