@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5f98df8-f211-4bd0-80cc-b91b925967cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/model/EmployeeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jazhnaneh/student/service/StudentServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FirstLesson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FirstLesson.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/dto/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/dto/StudentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/service/LessonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/service/LessonServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/service/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jazhnaneh/student/service/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="b5f98df8-f211-4bd0-80cc-b91b925967cb" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +74,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -300,6 +286,7 @@
       <workItem from="1584272171374" duration="6535000" />
       <workItem from="1584364239353" duration="16697000" />
       <workItem from="1584392370901" duration="11818000" />
+      <workItem from="1584465274650" duration="374000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1584127232064</created>
